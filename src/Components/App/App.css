@@ -1,0 +1,37 @@
+@keyframes slidein {
+    0% {
+      translate: 150vw 0;
+      scale: 100% 1;
+    }
+    25%{
+        translate: 0 0;
+        scale: 100% 1;
+      }
+  
+    50%{
+      translate: 0 0;
+      scale: 100% 1;
+    }
+    75%{
+        translate: 0 0;
+        scale: 100% 1;
+      }
+    100%{
+        translate: -150vw 0;
+        scale: 100% 1;
+      }
+  }
+  
+.main{
+    background-image: linear-gradient(to top, rgb(0, 0, 0) , rgba(0, 0, 0, 0.178)), url(../../../public/assets/Images/mainPages.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+}
+.subtitle{
+    animation-duration: 15s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-timeline: 30ms;
+}
